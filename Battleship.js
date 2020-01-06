@@ -22,9 +22,11 @@ function createSeaBattle() {
 
     placeShip = function (ship){
             //choose direction randomly and start to check fields
-        let randDirection = Math.floor(Math.random() * 2) + 1;
-        let pickRandomCell = battleField[Math.floor(Math.random() * battleField.length())];
-        for (let i = 0) 
+        let randDirectionMake = functionMath.floor(Math.random() * 2) + 1;
+        let RandomCell = battleField[Math.floor(Math.random() * battleField.length)];
+        for (let i = 0; i < ship.length; i++){
+            if(i !== ship.length - 1 && cell.x === battleField.xLength - 1)
+        } 
     }
     fieldMake(5, 5);
     console.log(battleField);
@@ -33,7 +35,8 @@ function createSeaBattle() {
 createSeaBattle();
 console.log('$$$$$$$$$$$$$$');
 
-  
+    
+
     /*
     shipPositioning = function (ships){
         for (let ship of arguments) {
@@ -42,13 +45,26 @@ console.log('$$$$$$$$$$$$$$');
             }
         }
     } 
+    
+
+}
+
+
+
+
+
+{
+            occupied: undefined,
+            coordinate: {
+                x: xCoordinate,
+                y: yCoordinate    
+            }
     */
     
-WarShip = {
-    size: undefined,
-    name: 'gloomy',
-    position: []
-}
+
+
+
+
 
 const warShips = [
     Battleship = {
@@ -59,3 +75,11 @@ const warShips = [
         sunk: false
     }, 
     'Cruiser','Destroyer', 'PatrolBoat']; 
+
+
+
+    WarShip = {
+        size: undefined,
+        name: 'gloomy',
+        position: []
+    }
